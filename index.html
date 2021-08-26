@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>how to make bird animation with help of CSS </title>
+        <style>
+            body{
+                background-color: rgb(192, 217, 226);
+                
+            }
+                  .bird{
+                width: 142px;
+                height: 150px;  
+                background-image: url("./2\ \(1\).png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-name: abc;
+                animation-duration: 0.4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(3);
+                transform: rotateZ(45deg); 
+             
+                
+            }
+            @keyframes abc{
+                0%{
+                    background-position: 0px 0px ; 
+                }
+                100%{
+                    background-position: -452px 0px ; 
+                }
+            }
+            
+            .mybird{
+                height: 190px;
+                width: 130px;
+                background-image: url("./1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: xyz 1s steps(9) infinite;
+                
+                
+            }
+            @keyframes xyz {
+                0%{
+                    background-position: 0px 0px; 
+                }
+                100%{
+                    background-position: -1232px 0px;
+                }
+                
+            }
+            .p1{
+                animation-name: b2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                position: relative;
+            }
+            @keyframes b2 {
+                0%{
+                    left: 0%;
+                }
+                100%{
+                    left: 100%;
+                }
+            }
+       
+        </style>
+    </head>
+    <body>
+        <div class="p1">
+            <div class=" bird"></div>
+            <div class="mybird"></div>
+            <div class="b3"></div>
+            
+        </div>
+    </body>
+</html>
